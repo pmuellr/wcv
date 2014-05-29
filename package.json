@@ -1,0 +1,16 @@
+{
+  "name":             "wcv",
+  "version":          "0.0.0",
+  "description":      "workspace, columns, views for the browser",
+  "author":           "pmuellr",
+  "license":          "MIT",
+  "bugs":             {"url": "https://github.com/pmuellr/wcv/issues"},
+  "homepage":         "https://github.com/pmuellr/wcv",
+  "main":             "lib/wcv.js",
+  "scripts": {
+    "test":           "jbuild test"
+  },
+  "repository":       {"type":"git", "url":"https://github.com/pmuellr/wcv.git"},
+  "dependencies": {
+  }
+}

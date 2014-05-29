@@ -1,0 +1,80 @@
+<!doctype html>
+
+<!-- Licensed under the MIT License. See the LICENSE file for details. -->
+
+<html>
+<head>
+<title>test-03-b.html</title>
+<style>
+body {
+  font-size:        120%;
+}
+
+html, body {
+  margin:           0;
+  height:           100%;
+}
+
+html, body {
+  background-color: #FFF;
+}
+
+.wcv-workspace-header {
+}
+
+.wcv-workspace {
+  background-color: #FAA;
+}
+
+.wcv-column-shell {
+}
+
+.wcv-column-header {
+}
+
+.wcv-column {
+  background-color: #AFA;
+}
+
+.wcv-view-shell {
+}
+
+.wcv-view-header {
+}
+
+.wcv-view {
+  background-color: #AAF;
+}
+
+.wcv-column-edge, .wcv-view-edge {
+  background-color: #FFA;
+}
+
+</style>
+</head>
+
+<body>
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../lib/wcv.js"></script>
+
+  <script>
+    var ws  = wcv.createWorkspace()
+    $(".wcv-workspace-header", ws.elem).text("workspace header")
+
+    for (var i=0; i<3; i++) {
+      var col = ws.addColumn()
+      $(".wcv-column-header", col.elem).text("column header")
+
+      for (var j=0; j<=i; j++) {
+        var view = col.addView()
+        $(".wcv-view",        view.elem).text(i + " - " + j)
+        $(".wcv-view-header", view.elem).text("view header")
+      }
+    }
+
+    $("body").append(ws.elem)
+  </script>
+
+</body>
+
+</html>

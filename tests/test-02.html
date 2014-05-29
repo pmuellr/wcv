@@ -1,0 +1,136 @@
+<!doctype html>
+
+<!-- Licensed under the MIT License. See the LICENSE file for details. -->
+
+<html>
+<head>
+<title>test-02.html</title>
+<style>
+body {
+  font-size:        120%;
+}
+
+html, body {
+  margin:           0;
+  height:           100%;
+}
+
+.wcv-workspace-shell {
+  display:          flex;
+  flex-direction:   column;
+  justify-content:  space-around;
+  align-items:      stretch;
+
+  margin:           0;
+  height:           100%;
+}
+
+.wcv-workspace-header {
+  flex:             0 1 auto;
+}
+
+.wcv-workspace {
+  display:          flex;
+  flex-direction:   row;
+  justify-content:  space-around;
+  align-items:      stretch;
+  flex:             1 1;
+
+  height:           100%;
+}
+
+.wcv-column {
+  display:          flex;
+  flex-direction:   column;
+  justify-content:  space-around;
+  align-items:      stretch;
+  flex:             1 1;
+}
+
+.wcv-view {
+  flex:             1 1;
+}
+
+/* custom */
+
+html, body {
+  background-color: #FFF;
+}
+
+.wcv-workspace-header {
+  background-color: #111;
+  color:            #EEE;
+  padding:          0.5em;
+}
+
+.wcv-workspace {
+  background-color: #FAA;
+}
+
+.wcv-column-header {
+  padding:          0.5em;
+}
+
+.wcv-column {
+  background-color: #AFA;
+
+  margin:           0.5em;
+  border:           thin solid black;
+  border-radius:    1em;
+}
+
+.wcv-view-header {
+  background-color: #777;
+  color:            #EEE;
+  padding:          0.5em;
+}
+
+.wcv-view {
+  background-color: #AAF;
+
+  margin:           0.5em;
+  padding:          0.5em;
+  border:           thin solid black;
+  border-radius:    1em;
+}
+
+.wcv-view-content {
+  background-color: #FAA;
+  padding:          0.5em;
+}}
+
+
+</style>
+</head>
+
+<body>
+  <div class="wcv-workspace-shell">
+    <div class="wcv-workspace-header">workspace header</div>
+    <div class="wcv-workspace">
+      <div class="wcv-column">
+        <div class="wcv-column-header">column header</div>
+        <div class="wcv-view">
+          <div class="wcv-view-header">view header</div>
+          <div class="wcv-view-content">view a 1</div>
+        </div>
+        <div class="wcv-view">
+          <div class="wcv-view-header">view header</div>
+          <div class="wcv-view-content">view a 2</div>
+        </div>
+      </div>
+      <div class="wcv-column">
+        <div class="wcv-column-header">column header</div>
+        <div class="wcv-view">
+          <div class="wcv-view-header">view header</div>
+          <div class="wcv-view-content">view b 1</div>
+        </div>
+        <div class="wcv-view">
+          <div class="wcv-view-header">view header</div>
+          <div class="wcv-view-content">view b 2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

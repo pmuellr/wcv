@@ -1,0 +1,74 @@
+<!doctype html>
+
+<!-- Licensed under the MIT License. See the LICENSE file for details. -->
+
+<html>
+<head>
+<title>test-01.html</title>
+<style>
+
+html, body {
+  margin:           0;
+  height:           100%;
+}
+
+.wcv-workspace {
+  display:          flex;
+  flex-direction:   row;
+  justify-content:  space-around;
+  align-items:      stretch;
+
+  height:           100%;
+}
+
+.wcv-column {
+  display:          flex;
+  flex-direction:   column;
+  justify-content:  space-around;
+  align-items:      stretch;
+  flex:             1 1;
+}
+
+.wcv-view {
+  flex:             1 1;
+}
+
+/* custom */
+
+html, body {
+  background-color: #FFF;
+}
+
+.wcv-workspace {
+  background-color: #FAA;
+}
+
+.wcv-column {
+  background-color: #AFA;
+
+  margin:           1em;
+}
+
+.wcv-view {
+  background-color: #AAF;
+
+  margin:           1em;
+}
+
+</style>
+</head>
+
+<body>
+  <div class="wcv-workspace">
+    <div class="wcv-column">
+      <div class="wcv-view">view a 1</div>
+      <div class="wcv-view">view a 2</div>
+    </div>
+    <div class="wcv-column">
+      <div class="wcv-view">view b 1</div>
+      <div class="wcv-view">view b 2</div>
+    </div>
+  </div>
+</body>
+
+</html>

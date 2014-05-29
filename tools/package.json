@@ -1,0 +1,10 @@
+{
+  "name":               "tools",
+  "private":            true,
+  "dependencies": {
+    "bower":            "1.3.x",
+    "coffee-script":    "1.7.x",
+    "mocha":            "1.19.x",
+    "expect.js":        "0.3.x"
+  }
+}

@@ -1,0 +1,55 @@
+#-----------------------------------------------------------------------------
+# file generated from wcv.css
+#-----------------------------------------------------------------------------
+
+module.exports = '''
+/* Licensed under the MIT License. See the LICENSE file for details. */
+
+.wcv-workspace-shell {
+  height:           100%;
+
+  margin:           0;
+}
+
+.wcv-workspace-shell, .wcv-column-shell, .wcv-view-shell {
+  display:          flex;
+  flex-direction:   column;
+  justify-content:  space-around;
+  align-items:      stretch;
+
+  flex:             1 1 0;
+
+  overflow:         hidden;
+}
+
+.wcv-workspace-header, .wcv-column-header, .wcv-view-header {
+  flex:             0 0 auto;
+}
+
+.wcv-column-edge, .wcv-view-edge {
+  flex:             0 0 10px;
+}
+
+.wcv-workspace, .wcv-column {
+  display:          flex;
+  justify-content:  space-around;
+  align-items:      stretch;
+
+  flex:             1 1 0;
+
+  height:           100%;
+}
+
+.wcv-workspace {
+  flex-direction:   row;
+}
+
+.wcv-column {
+  flex-direction:   column;
+}
+
+.wcv-view {
+  flex:             1 1 0;
+}
+
+'''
